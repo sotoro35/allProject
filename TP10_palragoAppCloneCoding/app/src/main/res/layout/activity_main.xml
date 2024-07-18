@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <FrameLayout
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_above="@id/view"/>
+   <View
+       android:id="@+id/view"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#B8B8B8"
+       android:layout_above="@id/bnv" />
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bnv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       app:menu="@menu/bottom_app_menu"
+       app:labelVisibilityMode="labeled"
+       app:itemTextColor="@color/bottom_nv_color"
+       app:itemIconTint="@color/bottom_nv_color"
+       android:background="@drawable/shape"
+       style="@style/My_bottom_nv"/>
+   </RelativeLayout>
+
+   <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+       android:id="@+id/floating"
+       style="@style/Widget.MaterialComponents.FloatingActionButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#03A9F4"
+       app:layout_anchor="@id/bnv"
+       app:layout_anchorGravity="top|center"
+       app:icon="@drawable/shape"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/badmaru1"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="산리오 친구들"
+            android:textSize="30sp"
+            android:fontFamily="@font/bom"
+            android:textColor="#FA508A"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/iv"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="특징"
+            android:textSize="24sp"
+            android:fontFamily="@font/bom"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bom"
+            android:text="0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:layout_above="@id/btniv01"/>
+
+        <ImageView
+            android:id="@+id/btniv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_24"
+            android:layout_below="@id/tv_name"
+            android:layout_toLeftOf="@+id/btniv02"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/btniv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_below="@id/tv_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

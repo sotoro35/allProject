@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/stage01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg01"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:text="시작하기"
+                android:textColor="#000000"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/startbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="1 to 25"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/num199"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="숫자맞추기"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/scorebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="기록보기"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/stage02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg02"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bom"
+                    android:gravity="center"
+                    android:text="1 to 25"
+                    android:textColor="#000000"
+                    android:textSize="70sp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/s2_homebtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bom"
+                    android:text="X"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#00BCD4" />
+            </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn01"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn02"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn03"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn04"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/btn05"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn06"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn07"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn08"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn09"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/btn10"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn11"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn12"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn13"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn14"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/btn15"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn16"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="16"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn17"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="17"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn18"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="18"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn19"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="19"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/btn20"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn21"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="21"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn22"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="22"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn23"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="23"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/btn24"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="24"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+
+            <Button
+                android:id="@+id/btn25"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25"
+                android:backgroundTint="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/numtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bom"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="100sp"/>
+
+                <TextView
+                    android:id="@+id/timetv01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bom"
+                    android:text="60"
+                    android:textColor="#88000000"
+                    android:textSize="40sp"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+         </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/stage03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg03"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:text="축하합니다!"
+                android:textColor="#E91E63"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/timetv02"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:text="시간"
+                android:layout_marginTop="20dp"
+                android:textColor="#FD518C"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/timetv03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:text="시간"
+                android:textColor="#F891B5"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FF9FC0"
+                android:fontFamily="@font/bom"
+                android:text="기록 저장"
+                android:textSize="40sp" />
+
+
+            <Button
+                android:id="@+id/retrybtn"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FD518C"
+                android:fontFamily="@font/bom"
+                android:text="새로\n시작하기"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/stage04"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg04"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/scoretitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기록 보기"
+                android:textSize="30sp"
+                android:textColor="#E91E63"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bom"
+                    android:text="1 to 25"
+                    android:textSize="25sp"
+                    android:textColor="#F44336"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/scoretv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="화이티이잉!!"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/bom"
+                    android:padding="16dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:text="숫자 맞추기"
+                android:textSize="25sp"
+                android:textColor="#F44336"
+                android:gravity="center"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <TextView
+                    android:id="@+id/scoretv199"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="화이티이잉!!"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/bom"
+                    android:padding="16dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/homebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:text="처음화면"
+                android:textSize="45sp"
+                android:backgroundTint="#FD518C"
+                android:layout_marginTop="150dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/stage05"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@drawable/bg04"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:text="1 ~ 99                숫자 맞추기"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:layout_marginTop="70dp"/>
+            <EditText
+                android:id="@+id/et199"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:ems="8"
+                android:hint="숫자입력"
+                android:textSize="30sp"
+                android:maxLength="2"
+                android:inputType="phone"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/btn199"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:text="입력"
+                android:textSize="20sp"
+                android:backgroundTint="#FF000000"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv199"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bom"
+                android:text="몇번만에 맞출까용~?"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="150dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn199s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:fontFamily="@font/bom"
+                    android:text="기록"
+                    android:textSize="30sp"
+                    android:backgroundTint="#009688"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btn199h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:fontFamily="@font/bom"
+                    android:text="처음화면"
+                    android:backgroundTint="#E91E63"
+                    android:textSize="30sp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/stageend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/bg02">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/bom"
+                android:text="흑흑..                  게임오버             다시도전해봐요!"
+                android:textColor="#ff0000"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/endbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:fontFamily="@font/bom"
+                android:text="처음화면"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

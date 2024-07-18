@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:menu="@menu/bottom_nv_menu"
+        app:itemTextColor="@color/bottom_nv_color"
+        app:itemIconTint="@color/bottom_nv_color"
+        app:labelVisibilityMode="labeled"
+        android:padding="5dp"
+        android:layout_gravity="bottom"/>
+
+
+
+<!--        &lt;!&ndash; 검색창 // 액티비티 연결.. &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/line1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="5"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_alignParentTop="true">-->
+
+<!--        &lt;!&ndash; 검색창 카드뷰 &ndash;&gt;-->
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="50dp"-->
+<!--            app:cardElevation="10dp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_weight="4">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="16dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/card_iv"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/search_24"-->
+<!--                    android:layout_marginLeft="10dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/card_tv1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="어디로 여행가세요?"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:fontFamily="@font/gmarket"-->
+<!--                    android:layout_toRightOf="@id/card_iv"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginTop="7dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/card_tv2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="어디든지* 언제든 일주일 * 게스트 추가"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:fontFamily="@font/gmarket"-->
+<!--                    android:layout_toRightOf="@id/card_iv"-->
+<!--                    android:layout_below="@id/card_tv1"-->
+<!--                    android:layout_marginLeft="5dp"/>-->
+
+
+<!--            </RelativeLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        &lt;!&ndash; 검색창 옆 필터 아이콘 // 다이얼로그 연결.. &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/filter_iv"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:src="@drawable/filter"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:background="@drawable/ripple_filter"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:padding="8dp"/>-->
+
+<!--        </LinearLayout>-->
+
+
+
+<!--        &lt;!&ndash; 프래그먼트 이미지가 보여질 부분 &ndash;&gt;-->
+<!--        <androidx.viewpager2.widget.ViewPager2-->
+<!--            android:id="@+id/fragment_pager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_below="@+id/line1"/>-->
+
+<!--        &lt;!&ndash; 상단 탭 // 리사이클러 연결.. 및 프래그먼트로 추정.. &ndash;&gt;-->
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tab"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:tabMode="scrollable"-->
+<!--            app:tabPadding="15dp"-->
+<!--            app:tabMinWidth="100dp"-->
+<!--            android:layout_below="@id/line1"-->
+<!--            android:layout_marginBottom="20dp"/>-->
+<!--        &lt;!&ndash; tabMode로 탭 스크롤 기능 추가 &ndash;&gt;-->
+<!--        &lt;!&ndash; 탭 목록 및 아이콘 추가는 자바에서 &ndash;&gt;-->
+
+<!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--            android:id="@+id/ploating_map"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            android:text="지도"-->
+<!--            android:textColor="@color/white"-->
+<!--            app:icon="@drawable/baseline_map"-->
+<!--            app:iconTint="@color/white"-->
+<!--            app:iconGravity="textStart"-->
+<!--            android:layout_above="@+id/bottom_nv"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginBottom="15dp"/>-->
+
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_nv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.BottomNavigationView"-->
+<!--            app:menu="@menu/bottom_nv_menu"-->
+<!--            app:itemTextColor="@color/bottom_nv_color"-->
+<!--            app:itemIconTint="@color/bottom_nv_color"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_alignParentBottom="true"/>-->
+
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="※숫자로 하는 야구게임※"
+        android:textSize="40sp"
+        android:fontFamily="@font/bom"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:hint="0"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:background="@drawable/ball"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_marginStart="8dp"
+            />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:hint="0"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:background="@drawable/ball"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_marginHorizontal="35dp"
+            />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:hint="0"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:background="@drawable/ball"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:fontFamily="@font/bom"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2D00BCD4"
+        android:text="결과값"
+        android:textSize="30sp"
+        android:gravity="start"
+        android:padding="10dp"/>
+
+</LinearLayout>

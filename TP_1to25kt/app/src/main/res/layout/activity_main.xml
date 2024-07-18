@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg01"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/single"
+        android:gravity="center"
+        android:text="시작하기"
+        android:textColor="#FFC107"
+        android:textSize="80sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_stage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/single"
+        android:text="1 to 25"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_stage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/single"
+        android:text="숫자맞추기"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/single"
+        android:text="기록보기"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

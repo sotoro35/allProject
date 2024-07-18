@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "232021932819",
+    "project_id": "ex71firebasechattinghsr",
+    "storage_bucket": "ex71firebasechattinghsr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232021932819:android:40945e43f1fca34fcb78e6",
+        "android_client_info": {
+          "package_name": "com.hsr2024.ex71firebasechatting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzGKjr7bcaEGxb3NucMk6ieDm1QHrpWtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolbar_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/moneyicon"/>
+        <TextView
+            android:id="@+id/toolbar_tv"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text=" 0 p"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/hanbit"
+            android:layout_toRightOf="@id/toolbar_iv"/>
+
+        <ImageView
+            android:id="@+id/toolbar_bell"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_action_bell"
+            android:layout_toLeftOf="@id/toolbar_user"/>
+
+        <ImageView
+            android:id="@+id/toolbar_user"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_user"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/searchimg"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#AEA9A9"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/pager_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/"/>
+                <TextView
+                    android:id="@+id/pager_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최근 본 상품"
+            android:fontFamily="@font/hanbit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="팔라고 장터"
+                    android:fontFamily="@font/hanbit"
+                    android:textSize="24sp"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/icon_search"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_search_24"
+                    android:layout_toLeftOf="@id/icon_user"/>
+
+                <ImageView
+                    android:id="@+id/icon_user"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_user"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_user"
+                android:background="@color/white"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 브랜드"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hanbit"
+                android:backgroundTint="@color/white"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

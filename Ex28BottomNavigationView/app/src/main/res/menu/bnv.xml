@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- BNV 의 메뉴아이템은 3~5개 사이를 권장함 -->
+    <item android:id="@+id/bnv_home" android:title="홈" android:icon="@drawable/ic_bnv_home" />
+    <item android:id="@+id/bnv_Search" android:title="검색" android:icon="@drawable/ic_bnv_search" />
+    <item android:id="@+id/bnv_location" android:title="위치" android:icon="@drawable/ic_bnv_location" />
+</menu>

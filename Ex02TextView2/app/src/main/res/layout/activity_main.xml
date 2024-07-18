@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#54F44336"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#03A9F4"
+        android:textStyle="bold|italic"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="#6BFFC107"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="nice"
+        android:background="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글씨정렬"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOD"
+        android:padding="8dp"
+        android:background="#A100FF00"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nice meet you"
+        android:textSize="24sp"
+        android:fontFamily="@string/app_name"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aaa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0101231234"
+        android:autoLink="phone"/>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요. 긴 글씨의 경우 한줄에 출력할때 칸이 모자랄 수 있습니다.그렇다고 합니다. 감사합니다 ㅎㅎㅎ"
+        android:ellipsize="marquee"
+        android:singleLine="true"/>
+
+
+</LinearLayout>

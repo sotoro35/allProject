@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home" android:icon="@drawable/ic_action_home" android:title="홈" />
+    <item android:id="@+id/store" android:icon="@drawable/ic_action_store" android:title="스토어" />
+    <item android:id="@+id/ploating"  android:title="팔라고 장터" android:enabled="false"/>
+    <item android:id="@+id/talk" android:icon="@drawable/ic_action_talk" android:title="팔라고톡" />
+    <item android:id="@+id/coupon" android:icon="@drawable/ic_action_coupon" android:title="내 쿠폰함" />
+</menu>

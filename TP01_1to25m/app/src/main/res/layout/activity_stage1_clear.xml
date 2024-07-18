@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Strage3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/bom"
+        android:gravity="center"
+        android:text="축하합니다!"
+        android:textColor="#E91E63"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/timetv01"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:fontFamily="@font/bom"
+        android:gravity="center"
+        android:text="시간"
+        android:layout_marginTop="20dp"
+        android:textColor="#FD518C"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/timetv02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bom"
+        android:gravity="center"
+        android:text="시간"
+        android:textColor="#F891B5"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF9FC0"
+        android:fontFamily="@font/bom"
+        android:text="기록 저장"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/retrybtn"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FD518C"
+        android:fontFamily="@font/bom"
+        android:text="새로\n시작하기"
+        android:textSize="50sp" />
+
+</LinearLayout>

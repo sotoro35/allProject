@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg04"
+    tools:context=".ScoreActivity">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기록 보기"
+            android:textSize="50sp"
+            android:textColor="#E91E63"
+            android:fontFamily="@font/single"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/single"
+            android:text="1 to 25"
+            android:textSize="32sp"
+            android:textColor="#F44336"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_savescore"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_savescore_1to25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/single"
+                android:padding="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/single"
+        android:text="숫자 맞추기"
+        android:textSize="32sp"
+        android:textColor="#F44336"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_savescore"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_savescore_199"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/single"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/single"
+        android:text="처음화면"
+        android:textSize="20sp"
+        android:backgroundTint="#FD518C"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

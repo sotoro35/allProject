@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "446968929740",
+    "project_id": "ex69firebasestroragehsr",
+    "storage_bucket": "ex69firebasestroragehsr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446968929740:android:eefbe69b904ed63a581169",
+        "android_client_info": {
+          "package_name": "com.hsr2024.ex69firebasestorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3mk7TKp27GAJCGjk_3EJ8xPpqdSY2m0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

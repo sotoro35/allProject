@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "484541263176",
+    "project_id": "ex70firestorehsr",
+    "storage_bucket": "ex70firestorehsr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484541263176:android:954909b1d1857b4b5e577d",
+        "android_client_info": {
+          "package_name": "com.hsr2024.ex70firebasefirestoredb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbVsLSDJcTIy9by_N57p87JxCZud2qeUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

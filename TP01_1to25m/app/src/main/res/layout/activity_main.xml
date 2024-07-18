@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg01"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/bom"
+                android:gravity="center"
+                android:text="시작하기"
+                android:textColor="#000000"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/stage1btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="1 to 25"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/stage2btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="숫자맞추기"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/scorebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/bom"
+                android:text="기록보기"
+                android:textSize="40sp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/stageend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/bg02">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/bom"
+                android:text="흑흑..                  게임오버             다시도전해봐요!"
+                android:textColor="#ff0000"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/endbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:fontFamily="@font/bom"
+                android:text="처음화면"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#E91E63"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

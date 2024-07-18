@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 외부저장소의 앱 고유영역을 공유.. -->
+    <external-files-path
+        name="external_file"
+        path="."/>
+
+    <!-- name = 고유영역 이름 // path = . 점 찍으면 그 안의 다  -->
+
+
+
+</paths>
